@@ -55,7 +55,7 @@ header > .center {
 	width: 258px;
 }
 
-header a {
+.center .menu-desktop .menu a {
 	color: #9B0F1C;
 	text-decoration: none;
 	display: inline-block;
@@ -63,21 +63,32 @@ header a {
 	font-size: 18px;
 }
 
-header a:hover {
+.center .menu-desktop .menu a:hover {
 	color: #454A4A;
 	transform: scale(1.05);
 }
 
-header nav ul li {
-	display: inline-block;
-	padding: 0 40px;
+header nav ul {
+	text-align: center;
 }
 
-header .icons a {
+header nav ul li {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+.center .icons a {
+	color: #9B0F1C;
 	transition: .3s;
 	padding: 0 2px;
 	margin-left: 17px;
 	font-size: 25px;
+	display: inline-block;
+}
+
+.center .icons a:hover {
+	color: #454A4A;
+	transform: scale(1.05);
 }
 
 /* ESTILO DO TOPO DO SITE */
@@ -388,8 +399,14 @@ footer.rodape {
 		display: block;
 	}
 
+	header nav ul {
+		text-align: center;
+		justify-content: center;
+	}
+
 	header nav ul li {
 		padding: 0 5px;
+		display: inline-block;
 	}
 
 	header nav ul li a {
@@ -397,10 +414,18 @@ footer.rodape {
 		text-align: center;
 		padding-right: 5px;
 	}
+	.center .menu-desktop {	
+		text-align: center;
+	}
 
 	.menu-desktop .menu {
 		display: flex;
 	}
+
+	.center .menu-desktop .menu a {
+		font-size: 13px;
+	}
+
 
 	.center .icons {
 		margin: 0 auto;
